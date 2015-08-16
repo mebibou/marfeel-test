@@ -79,6 +79,7 @@
   clear: both;
   display: inline-block;
   width: 100%;
+  margin-top: 10px;
 }
 
 .device-container > div {
@@ -95,20 +96,60 @@
   display: inline-block;
 }
 
-.device-container .smartphone {
+.device-container > div:first-child {
   float: right;
   text-align: right;
 }
 
-.device-container .smartphone span {
+.device-container > div:first-child span, .device-container > div:first-child a {
   margin-left: 10px;
 }
 
-.device-container .tablet {
+.device-container > div:nth-child(2) {
   float: left;
   text-align: left;
 }
 
-.device-container .tablet span {
+.device-container > div:nth-child(2) span, .device-container > div:nth-child(2) a {
   margin-right: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .device-container > div span {
+    display: block;
+  }
+
+  .device-container > div:first-child {
+    text-align: left;
+    margin-left: -1px;
+    border-left: 1px solid gray;
+  }
+  .device-container > div:nth-child(2) {
+    text-align: right;
+  }
+}
+
+@media screen and (max-width: 720px) {
+
+  .charts-slider {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .charts-container {
+    width: 730px;
+  }
+
+  .device-container .type {
+    font-size: 14px;
+  }
+
+  .device-container .ratio {
+    font-size: 16px;
+  }
+
+  .device-container .number {
+    display: inline-block;
+    font-size: 12px;
+  }
 }

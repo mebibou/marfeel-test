@@ -14,31 +14,35 @@
 </head>
 <body>
 
-  <div class="charts-container">
+  <template id="chart-template">
+    <div class="chart-container">
+      <div class="chart">
 
-    <template id="chart-template">
-      <div class="chart-container">
-        <div class="chart">
+        <div class="line horizontal"></div>
+        <div class="line vertical"></div>
 
-          <div class="line horizontal"></div>
-          <div class="line vertical"></div>
-
-          <div class="circle">
-            <div class="center">
-              <a class="title" hre="#" target="_blank"></a>
-              <p class="total"><span class="number"></span>€</p>
-            </div>
+        <div class="circle">
+          <div class="center">
+            <a class="title" hre="#" target="_blank"></a>
+            <p class="total"><span class="number"></span>€</p>
           </div>
-
         </div>
 
-        <div class="device-container"></div>
       </div>
-    </template>
 
-    <div id="chart-revenue"></div>
-    <div id="chart-impresions"></div>
-    <div id="chart-visits"></div>
+      <div class="device-container"></div>
+    </div>
+  </template>
+
+  <div class="charts-slider">
+
+    <div class="charts-container">
+
+      <div id="chart-revenue"></div>
+      <div id="chart-impresions"></div>
+      <div id="chart-visits"></div>
+
+    </div>
 
   </div>
 
