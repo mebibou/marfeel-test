@@ -8,13 +8,41 @@
 
   <title>Marfeel Test</title>
 
-  <link rel="stylesheet" href="/vendor/normalize.css/normalize.css" />
+  <link rel="stylesheet" href="vendor/normalize.css/normalize.css" />
+  <link rel="stylesheet" href="features/charts/assets/charts.css" />
 
 </head>
 <body>
 
+  <div class="charts-container">
 
-  <script src="/vendor/d3/d3.min.js"></script>
+    <template id="chart-template">
+      <div class="chart-container">
+        <div class="chart">
+
+          <div class="line horizontal"></div>
+          <div class="line vertical"></div>
+
+          <div class="circle">
+            <div class="center">
+              <a class="title" hre="#" target="_blank"></a>
+              <p class="total"><span class="number"></span>€</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="device-container"></div>
+      </div>
+    </template>
+
+    <div id="chart-revenue"></div>
+    <div id="chart-impresions"></div>
+    <div id="chart-visits"></div>
+
+  </div>
+
+  <script data-main="features/common/common.js" src="vendor/requirejs/require.js"></script>
 
 </body>
 </html>
