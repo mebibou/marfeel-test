@@ -1,0 +1,20 @@
+{
+  "name": "marfeel-test",
+  "version": "1.0.0",
+  "description": "Test for Marfeel",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "bower install",
+    "test": "karma start --single-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mebibou/marfeel-test.git"
+  },
+  "author": "Guillaume Royer <guillaumeroyer.mail@gmail.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/mebibou/marfeel-test/issues"
+  },
+  "homepage": "https://github.com/mebibou/marfeel-test#readme"
+}
