@@ -16,5 +16,14 @@
   "bugs": {
     "url": "https://github.com/mebibou/marfeel-test/issues"
   },
-  "homepage": "https://github.com/mebibou/marfeel-test#readme"
+  "homepage": "https://github.com/mebibou/marfeel-test#readme",
+  "devDependencies": {
+    "jasmine": "^2.3.2",
+    "jasmine-core": "^2.3.4",
+    "karma": "^0.13.9",
+    "karma-chrome-launcher": "^0.2.0",
+    "karma-jasmine": "^0.3.6",
+    "karma-requirejs": "^0.2.2",
+    "requirejs": "^2.1.20"
+  }
 }
