@@ -1,0 +1,21 @@
+{
+  "name": "marfeel-test",
+  "version": "1.0.0",
+  "homepage": "https://github.com/mebibou/marfeel-test",
+  "authors": [
+    "groyer <guillaumeroyer.mail@gmail.com>"
+  ],
+  "main": "index.html",
+  "license": "GNU-3.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "d3": "~3.5.6",
+    "normalize.css": "~3.0.3"
+  }
+}
