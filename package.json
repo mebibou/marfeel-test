@@ -4,8 +4,9 @@
   "description": "Test for Marfeel",
   "main": "index.js",
   "scripts": {
-    "postinstall": "bower install",
-    "test": "karma start --single-run"
+    "postinstall": "bower install && npm run brequire",
+    "test": "karma start --single-run",
+    "brequire": "bower-requirejs -c features/common/config.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,8 @@
   },
   "homepage": "https://github.com/mebibou/marfeel-test#readme",
   "devDependencies": {
+    "bower": "^1.4.1",
+    "bower-requirejs": "^1.1.3",
     "jasmine": "^2.3.2",
     "jasmine-core": "^2.3.4",
     "karma": "^0.13.9",

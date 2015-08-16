@@ -15,13 +15,16 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'test-main.js',
-      {pattern: 'test/**/*.js', included: false}
+      'test/test-main.js',
+
+      {pattern: 'features/**/*.js', included: false},
+      {pattern: 'test/**/*Spec.js', included: false}
     ],
 
 
     // list of files to exclude
     exclude: [
+        'features/common/config.js'
     ],
 
 
@@ -62,5 +65,6 @@ module.exports = function(config) {
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
     singleRun: false
-  })
-}
+  });
+
+};
