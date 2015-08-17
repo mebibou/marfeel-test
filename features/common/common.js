@@ -17,34 +17,34 @@
         chartController.render();
       };
 
-      createChart('Revenue', 200000, '#1DE9B6', [{
+      createChart('Revenue', 200000, '#4dd025', [{
         type: 'Smartphone',
         number: 80000,
-        color: '#1DE9B6'
+        color: '#005d00'
       }, {
         type: 'Tablet',
         number: 120000,
-        color: '#00BFA5'
+        color: '#4dd025'
       }]);
 
-      createChart('Impresions', 50000000, '#2196F3', [{
+      createChart('Impresions', 50000000, '#00475b', [{
         type: 'Smartphone',
         number: 30000000,
-        color: '#3F51B5'
+        color: '#00475b'
       }, {
         type: 'Tablet',
         number: 20000000,
-        color: '#2196F3'
+        color: '#0ac3e2'
       }]);
 
-      createChart('Visits', 600000000, '#FFC107', [{
+      createChart('Visits', 600000000, '#febf00', [{
         type: 'Smartphone',
         number: 120000000,
-        color: '#B71C1C'
+        color: '#d44e0f'
       }, {
         type: 'Tablet',
         number: 480000000,
-        color: '#FFC107'
+        color: '#febf00'
       }]);
 
     });

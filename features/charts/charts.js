@@ -39,7 +39,7 @@ define(['d3', '../common/progressive-pie', './charts-device'], function(d3, Prog
   }
 
   Charts.prototype.render = function() {
-    var pie = new ProgressivePie(this._chart, 200, 200, 15);
+    var pie = new ProgressivePie(this._chart, 100, 100, 5);
 
     this._model.devices().forEach(function(device) {
       pie.addStep(device.ratio(), device.color());
