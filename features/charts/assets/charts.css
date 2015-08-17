@@ -5,12 +5,12 @@
 
 .charts-container > div {
   display: inline-block;
-  width: 203px;
+  width: 204px;
 }
 
 .chart-container {
   margin: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 6px;
   border-bottom: 2px solid #e2e2e2;
 }
 
@@ -98,17 +98,17 @@
 
 .device-container .type {
   display: block;
-  margin-bottom: 2px;
+  margin-bottom: 3px;
   font-size: 10px;
+  font-weight: 700;
 }
 
 .device-container .ratio {
-  font-size: 10px;
-  color: #797979;
+  font-size: 9px;
 }
 
 .device-container .number {
-  font-size: 10px;
+  font-size: 9px;
   color: #cecece;
 }
 
@@ -137,9 +137,13 @@
   .device-container > div:nth-child(2) .number {
     margin-right: 0;
   }
+
+  .device-container .ratio {
+    color: #797979 !important;
+  }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 720px) {
   .device-container > div span {
     display: block;
   }
@@ -152,9 +156,6 @@
   .device-container > div:nth-child(2) {
     text-align: right;
   }
-}
-
-@media screen and (max-width: 720px) {
 
   .charts-slider {
     width: 100%;
@@ -166,15 +167,19 @@
   }
 
   .device-container .type {
-    font-size: 14px;
+    font-size: 8px;
+    margin-bottom: 0;
+    color: #c2c4c7 !important;
   }
 
   .device-container .ratio {
-    font-size: 16px;
+    font-size: 10px;
+    margin-bottom: 1px;
   }
 
   .device-container .number {
     display: inline-block;
-    font-size: 12px;
+    font-size: 6px;
+    color: #9f9f9f;
   }
 }

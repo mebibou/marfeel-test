@@ -31,6 +31,8 @@ define(function() {
     type.style('color', this._model.color());
 
     var ratio = this._view.append('span').text(this._model.ratio() + '%').attr('class', 'ratio');
+    ratio.style('color', this._model.color());
+
     var number = this._view.append('span').text(_dottedNumber(this._model.number()) + this._model.sign()).attr('class', 'number');
   };
 
