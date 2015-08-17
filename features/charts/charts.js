@@ -48,11 +48,12 @@ define(['d3', '../common/progressive-pie', './charts-device'], function(d3, Prog
     var title = this._view.select('.title');
     title.text(this._model.title());
 
-    var total = this._model.total(),
+    var sign = this._model.sign(),
+        total = this._model.total(),
         totalText = this._chart.select('.total').select('.number');
 
     pie.render(function(percent) {
-      totalText.text(_dottedNumber(Math.round(percent * total)));
+      totalText.text(_dottedNumber(Math.round(percent * total)) + sign);
     });
   };
 

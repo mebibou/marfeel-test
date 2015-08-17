@@ -1,9 +1,10 @@
 define(['./charts-device-model'], function(ChartsDeviceModel) {
   'use strict';
 
-  function ChartsModel(title, total) {
+  function ChartsModel(title, total, sign) {
     this._title = title;
     this._total = total;
+    this._sign = sign || '';
     this._devices = [];
   }
 
@@ -23,6 +24,14 @@ define(['./charts-device-model'], function(ChartsDeviceModel) {
     return this._total;
   };
 
+  ChartsModel.prototype.sign = function(sign) {
+    if (typeof sign != 'undefined') {
+      this._sign = sign;
+    }
+
+    return this._sign;
+  };
+
   ChartsModel.prototype.devices = function() {
     return this._devices;
   };
@@ -32,7 +41,7 @@ define(['./charts-device-model'], function(ChartsDeviceModel) {
       return;
     }
 
-    var device = new ChartsDeviceModel(title, number, this._total, color);
+    var device = new ChartsDeviceModel(title, number, this._total, color, this._sign);
     this._devices.push(device);
     return device;
   };

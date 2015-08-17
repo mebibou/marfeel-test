@@ -1,13 +1,17 @@
+.charts-slider {
+  margin: 0 auto;
+  text-align: center;
+}
+
 .charts-container > div {
-  width: 32%;
   display: inline-block;
-  min-width: 240px;
+  width: 203px;
 }
 
 .chart-container {
   margin: 20px;
   padding-bottom: 10px;
-  border-bottom: 3px solid gray;
+  border-bottom: 2px solid #e2e2e2;
 }
 
 .chart {
@@ -73,6 +77,8 @@
 
 .chart svg {
   position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .device-container {
@@ -86,14 +92,24 @@
   width: 50%;
 }
 
-.device-container > div a {
-  display: block;
-  margin-bottom: 2px;
-  font-size: 8px;
-}
-
 .device-container > div span {
   display: inline-block;
+}
+
+.device-container .type {
+  display: block;
+  margin-bottom: 2px;
+  font-size: 10px;
+}
+
+.device-container .ratio {
+  font-size: 10px;
+  color: #797979;
+}
+
+.device-container .number {
+  font-size: 10px;
+  color: #cecece;
 }
 
 .device-container > div:first-child {
@@ -102,7 +118,7 @@
 }
 
 .device-container > div:first-child span, .device-container > div:first-child a {
-  margin-left: 10px;
+  margin-left: 8px;
 }
 
 .device-container > div:nth-child(2) {
@@ -111,7 +127,16 @@
 }
 
 .device-container > div:nth-child(2) span, .device-container > div:nth-child(2) a {
-  margin-right: 10px;
+  margin-right: 8px;
+}
+
+@media screen and (min-width: 900px) {
+  .device-container > div:first-child .ratio {
+    margin-left: 0px;
+  }
+  .device-container > div:nth-child(2) .number {
+    margin-right: 0;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -137,7 +162,7 @@
   }
 
   .charts-container {
-    width: 730px;
+    width: 640px;
   }
 
   .device-container .type {

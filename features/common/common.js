@@ -4,8 +4,8 @@
   requirejs(['./config'], function(config) {
     requirejs(['d3', '../charts/charts', '../charts/charts-model'], function(d3, Charts, ChartsModel) {
 
-      var createChart  = function(title, total, mainColor, devices) {
-        var chartModel = new ChartsModel(title, total),
+      var createChart  = function(title, total, sign, mainColor, devices) {
+        var chartModel = new ChartsModel(title, total, sign),
             chartController = new Charts(d3.select('#chart-' + title), mainColor);
 
         chartController.model(chartModel);
@@ -17,7 +17,7 @@
         chartController.render();
       };
 
-      createChart('Revenue', 200000, '#4dd025', [{
+      createChart('Revenue', 200000, '€', '#4dd025', [{
         type: 'Smartphone',
         number: 80000,
         color: '#005d00'
@@ -27,7 +27,7 @@
         color: '#4dd025'
       }]);
 
-      createChart('Impresions', 50000000, '#00475b', [{
+      createChart('Impresions', 50000000, null, '#00475b', [{
         type: 'Smartphone',
         number: 30000000,
         color: '#00475b'
@@ -37,7 +37,7 @@
         color: '#0ac3e2'
       }]);
 
-      createChart('Visits', 600000000, '#febf00', [{
+      createChart('Visits', 600000000, null, '#febf00', [{
         type: 'Smartphone',
         number: 120000000,
         color: '#d44e0f'
